@@ -1,0 +1,128 @@
+.group-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.group-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.group-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.group-list::-webkit-scrollbar-thumb {
+  background: #c5c5c5;
+  border-radius: 2px;
+}
+
+.group-list::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+.group-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.group-list-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.create-group-button {
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.create-group-button:hover {
+  background-color: #4f46e5;
+}
+
+.group-list-content {
+  padding: 0.5rem;
+}
+
+.group-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-bottom: 0.25rem;
+}
+
+.group-item:hover {
+  background-color: #f3f4f6;
+}
+
+.group-item.active {
+  background-color: #eff6ff;
+}
+
+.group-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 0.75rem;
+}
+
+.group-avatar-placeholder {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #6366f1;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  margin-right: 0.75rem;
+}
+
+.group-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.group-name {
+  font-weight: 500;
+  color: #111827;
+  margin-bottom: 0.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.group-meta {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.loading-groups {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  color: #6b7280;
+}
+
+.error-message {
+  padding: 1rem;
+  color: #dc2626;
+  text-align: center;
+  font-size: 0.875rem;
+} 
